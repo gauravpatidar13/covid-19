@@ -1,0 +1,150 @@
+.bi h1{
+    text-align: center;
+    color:#000;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+.bi p{
+    color:#bfbfbf;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.non{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+   
+}
+.mcard {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.non .nol{
+    border:1px solid #bfbfbf;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.non .nol img{
+    width: 290px;
+    align-self: center;
+    border-radius: 50%;
+}
+.mcard p{
+    color:#999999;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.mcard button{
+    color:#fff;
+    background:#3498d8;
+    text-transform: capitalize;
+    border:none;
+    border-radius: 5px;
+    align-self: center;
+    padding:10px 30px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+@media (max-width:567px){
+   .bi p{
+    padding-right: 20px;
+    color: #bfbfbf;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-left: 20px;
+   }
+    .non{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+       
+    }
+    .mcard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bi h1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (min-width:568px) and (max-width:767px){
+    .non{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+       
+    }
+    .mcard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .non{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+       
+    }
+    .mcard {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .mcard {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .non .nol{
+        border:1px solid #bfbfbf;
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .non .nol img{
+        width: 260px;
+        align-self: center;
+        border-radius: 50%;
+    }  
+}
