@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro&display=swap');
 #sidebar{
     height: 100%;
-    width: 200px;
+    width: 150px;
     background: #fff;
 }
-
 .nav-item{
     font-family: Poppins;
     font-weight: 600;
@@ -17,13 +14,15 @@
     font-weight: 700;
 }
 .sidebar-brand{
-    width: 200px;
+    width: 100%;
     height: 100px;
     display: flex;
+    justify-content: center;
+
 }
 .side-nav-list{
     list-style: none;
-    width: 200px;
+    width: 100%;
     color:gray;
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,70 +31,48 @@
     background: #fff;
 }
 .side-nav-list li{
-    height: 40px;
-    line-height: 40px;
+    height: auto;
+    line-height: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .side-nav-list li a{
     margin-left: 20px;
+    font-size: 14px;
+    display: inline-flex;
+    font-weight: 400;
+    font-family: Poppins;
+    text-align: center;
 }
-.side-nav-list li:hover
-{
-    border-top: 1px solid gainsboro;
-    border-bottom: 1px solid gainsboro;
+.side-nav-list li:hover{
+    background: rgba(38,128,235,.3);
+    color:#fff;
 }
 .wrapper{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
+}
+.lio{
+    margin-left: 10px;
 }
 .wr{
     display: flex;
     flex-direction: row;
     background-color: rgb(247, 247, 251);
 
-}
-.yio{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-.perr{
-    width: 100%;
-    height: 100px;
-    background:#fff;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
 
 }
-.perr h2{
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 30px;
-    margin-left: 200px;
-
-}
-.perr p{
-    margin-top: 30px;
-    margin-right: 100px;
-    font-weight: 700;
-    font-size: 14px;
-}
-.cont{
-   width: 100%;
-   height: 300px;
-   padding-left: 100px;
-   padding-right: 100px;
-   padding-top: 50px;
-}
-.tabs-wr{
+.mcls{
     width: 100%;
-    height: 500px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
 }
+
+
 .nav-tabs .nav-link{
     color:#000;
     font-weight: bold;
@@ -107,311 +84,3 @@ justify-content: space-between;
     color:#ffffff;
 }
 
-.cont2{
-    width: 100%;
-    height: 300px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 150px;
- }
- .cd1{
-     width: 48%;
- }
- .cd2{
-     width: 48%;
- }
- .cd2 span{
-    border-radius: 2px;
-    font-size: 10px;
-    font-weight: 100;
-    padding: 4px 4px;
-    height: 18px;
-    width: 120px;
- }
- .cd2 p{
-     font-size: 12px;
-     color:gray;
-     width: 210px;
- }
- ul{
-     list-style: none;
- }
- ul .lst{
-    font-size: 12px; 
-    width: 100%;
-    height: 36px;
-    margin-bottom: 5px;
-    text-align:  center;
-    padding-top: 10px;
-    float:right;
- }
- ul .lst1{
-    background:rgb(239, 241, 251);
-    color:rgb(164, 151, 229);
- }
- ul .lst p{
-     float:left;
-     margin-left: 10px;
- }
- ul .lst2{
-    background: rgb(235, 245, 239);
-     color:rgb(195, 203, 144);
- }
- ul .lst3{
-    color:rgb(241, 144, 140);
-    background: rgb(251, 239, 237);
- }
- ul .lst4{
-    color:rgb(240, 107, 146);
-    background: rgb(252, 235, 235);
- }
- ul .deta{
-     margin-right: 20px;
-     background:#fff;
-     border-radius: 5px;
-     font-size: 12px;
-     display:block;
-     width: 72px;
-     float:right;
- }
-
- ul .deta{
-    float:right;
-    display: block;
-    background:#fff;
-    border-radius: 5px;
-    font-size: 12px;    
-    width: 72px;
- }
-
- ul.custom {
-    max-width: 350px;
-    counter-reset: my-awesome-counter;
-    list-style: none;
-    padding-left: 40px;
-  }
-  ul.custom li {
-    margin: 0 0 0.5rem 0;
-    counter-increment: my-awesome-counter;
-    position: relative;
-  }
-  ul.custom li.li1::before {
-    content: "1st";
-    font-size: 0.7rem;
-    font-weight: bold;
-    position: absolute;
-    --size: 32px;
-    left: calc(-1 * var(--size) - 10px);
-     line-height: var(--size);
-    width: var(--size);
-    height: var(--size);
-    top: 0;
-    text-align: center;
-  }
-  ul.custom li.li2::before {
-    content: "2nd";
-    font-size: 0.7rem;
-    font-weight: bold;
-    position: absolute;
-    --size: 38px;
-    --sizew:44px;
-    left: calc(-1 * var(--size) - 10px);
-     line-height: var(--size);
-    width: var(--sizew);
-    height: var(--size);
-    top: var(--size);
-    text-align: center;
-  }
-  ul.custom li.li3::before {
-    content: "3rd";
-    font-size: 0.7rem;
-    font-weight: bold;
-    position: absolute;
-    --sizew: 32px;
-    --size:32px;
-    --tops:84px;
-    left: calc(-1 * var(--size) - 10px);
-     line-height: var(--size);
-    width: var(--sizew);
-    height: var(--size);
-    top: var(--tops);
-    text-align: center;
-  }
-  ul.custom li.li4::before {
-    content: "4th";
-    font-size: 0.7rem;
-    font-weight: bold;
-    position: absolute;
-    --sizew: 32px;
-    --size:32px;
-    --tops:124px;
-    left: calc(-1 * var(--size) - 10px);
-     line-height: var(--size);
-    width: var(--sizew);
-    height: var(--size);
-    top: var(--tops);
-    text-align: center;
-  }
-  ul.custom li.li5::before {
-    content: "5th";
-    font-size: 0.7rem;
-    font-weight: bold;
-    position: absolute;
-    --sizew: 32px;
-    --size:32px;
-    --tops:164px;
-    left: calc(-1 * var(--size) - 10px);
-     line-height: var(--size);
-    width: var(--sizew);
-    height: var(--size);
-    top: var(--tops);
-    text-align: center;
-  }
-  ul.custom li.li6::before {
-    content: "6th";
-    font-size: 0.7rem;
-    font-weight: bold;
-    position: absolute;
-    --sizew: 32px;
-    --size:32px;
-    --tops:205px;
-    left: calc(-1 * var(--size) - 10px);
-     line-height: var(--size);
-    width: var(--sizew);
-    height: var(--size);
-    top: var(--tops);
-    text-align: center;
-  }
-  ul.custom li.li7::before {
-    content: "7th";
-    font-size: 0.7rem;
-    font-weight: bold;
-    position: absolute;
-    --sizew: 32px;
-    --size:32px;
-    --tops:245px;
-    left: calc(-1 * var(--size) - 10px);
-     line-height: var(--size);
-    width: var(--sizew);
-    height: var(--size);
-    top: var(--tops);
-    text-align: center;
-  }
-  ul.custom li.li8::before {
-    content: "8th";
-    font-size: 0.7rem;
-    font-weight: bold;
-    position: absolute;
-    --sizew: 32px;
-    --size:32px;
-    --tops:285px;
-    left: calc(-1 * var(--size) - 10px);
-     line-height: var(--size);
-    width: var(--sizew);
-    height: var(--size);
-    top: var(--tops);
-    text-align: center;
-  }
-  ul.custom li.li9::before {
-    content: "9th";
-    font-size: 0.7rem;
-    font-weight: bold;
-    position: absolute;
-    --sizew: 32px;
-    --size:32px;
-    --tops:330px;
-    left: calc(-1 * var(--size) - 10px);
-     line-height: var(--size);
-    width: var(--sizew);
-    height: var(--size);
-    top: var(--tops);
-    text-align: center;
-  }
-  ul.custom li.li10::before {
-    content: "10th";
-    font-size: 0.6rem;
-    font-weight: bold;
-    position: absolute;
-    --sizew: 32px;
-    --size:32px;
-    --tops:370px;
-    left: calc(-1 * var(--size) - 10px);
-     line-height: var(--size);
-    width: var(--sizew);
-    height: var(--size);
-    top: var(--tops);
-    text-align: center;
-  }
-  tr th{
-      border-top: none;
-  }
- perfect-scrollbar{
-     height: 500px;
- }
- 
-.table tr th{
-    font-size: 12px;
-}
-.mtit{
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: capitalize;
-    font-family: Poppins;
-}
-.bd-gh{
-    background:rgb(222, 242, 246);
-    color:rgb(14, 167, 194);
-    font-size: 12px;
-    width: 150px;
-}
-.ftl{
-    font-size: 10px;
-    width: 100px;
-    height: 16px;
-    font-weight: 100;
-    border-radius: 2px;
-    padding-top: 2px;
-    padding-bottom: 4px;
-}
-.ps__thumb-y {
-    background-color: #ffc107!important;
-}
-tr td{
-    font-size: 14px;
-    width: 230px;
-    font-weight: 400;
-    color:#747373;
-    border-top:1px solid #f7f7fb;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-.card-title{
-    margin-bottom: 0.5rem;
-}
-h3.colli{
-    font-size: 1.75rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.card.custom{
-    height: 251px;
-    padding-bottom: 20px;
-}
-.clrl1{
-    background:rgb(252,240,237);
-    color:rgb(239, 147,163 )
-}
-.clrl2{
-    background: rgb(222,242,240);
-    color:rgb(50, 160, 145);
-}
-.clrl3{
-    background: rgb(247,242,245);
-    color:rgb(239,116,156);
-}
-.nav-tabs{
-    border:none;
-}

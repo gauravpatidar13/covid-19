@@ -7,130 +7,35 @@
     
     <ul class="side-nav-list">
         <span class="border-top"></span>
-        <li><a>People</a></li>
-        <li><a>Team Building</a></li>
-        <li><a>Productivity</a></li>
-        <li><a>Healthcheck</a></li>
-        <li><a>Hire</a></li>
-        <li><a>Library</a></li>
-        <li><a>Setting</a></li>
-        <li><a>Admin</a></li>
+        <li routerLink="people" routerLinkActive="active1" (click)=toggle(false)>
+            <div><img src="/assets/images/nav-icon/people.png" *ngIf="isPeople" class="lio">
+                <img src="/assets/images/nav-icon/white_people.png" *ngIf="!isPeople" 
+                class="lio"></div><a>People</a></li>
+        <li routerLink="team-building" routerLinkActive="active1" (click)=toggle(true)>
+            <div>
+            <img src="/assets/images/nav-icon/teams.png" class="lio">
+        </div>
+        <a>Team Building</a></li>
+        <li routerLink="productivity" routerLinkActive="active1" (click)=toggle(true)>
+            <img src="/assets/images/nav-icon/toolbox.png" class="lio"><a>Productivity</a></li>
+            <li routerLink="meta-skills" routerLinkActive="active1" (click)=toggle(true)>
+                <img src="/assets/images/nav-icon/toolbox.png" class="lio"><a>Metaskills</a></li>
+        <li routerLink="health-check" routerLinkActive="active1">
+            <img src="/assets/images/nav-icon/health.png" (click)=toggle(true) class="lio">
+            <a>Healthcheck</a></li>
+        <li routerLink="hire" routerLinkActive="active1" (click)=toggle(true)>
+            <img src="/assets/images/nav-icon/hire.png" class="lio"><a>Hire</a></li>
+        <li routerLink="library" routerLinkActive="active1" (click)=toggle(true)>
+            <img src="/assets/images/nav-icon/library.png" class="lio"><a>Library</a></li>
+        <li routerLink="settings" routerLinkActive="active1" (click)=toggle(true)>
+            <img src="/assets/images/nav-icon/settings.png" class="lio"><a>Setting</a></li>
+        <li routerLink="admin" routerLinkActive="active1" (click)=toggle(true)>
+            <img src="/assets/images/nav-icon/admin.png" class="lio"><a>Admin</a></li>
     </ul>
     </nav>
-    <div id="content">
-    </div>
-
 </div>
-<div class="yio">
-
-
-<div class="perr">
-<h2>Performance</h2>
-<p style="margin-right: 200px;">import csv</p>
+<div class="mcls">
+    <router-outlet></router-outlet>
 </div>
-<perfect-scrollbar>
-<div class="tabs-wr">
-<nav style="margin-left: 98px;margin-right: 100px">
-    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Sort By:<br><span>Performance</span></a>
-      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Sort By:<br><span>Influence</span></a>
-      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Sort By:<br><span>Bias</span></a>
-    </div>
-  </nav>
-  <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-        <div class="cont">
-            <div class="card">
-                <div class="card-body">
-                  <h6 class="card-title mtit">About this team</h6>
-                  <div class="table">
-                      <tr>
-                          <th>Name</th>
-                          <th>Sales</th>
-                          <th>Category2</th>
-                          <th>Influence</th>
-                      </tr>
-                      <tr>
-                        <td>John Walker</td>
-                        <td>25</td>
-                        <td>25</td>
-                        <td><span class="badge badge-danger ftl clrl1">Envisioning</span></td>
-                    </tr>
-                    <tr>
-                        <td>John Walker</td>
-                        <td>25</td>
-                        <td>25</td>
-                        <td><span class="badge badge-success ftl clrl2">Envisioning</span></td>
-                    </tr>
-                    <tr>
-                        <td>John Walker</td>
-                        <td>25</td>
-                        <td>25</td>
-                        <td><span class="badge badge-info ftl clrl3">Envisioning</span></td>
-                    </tr>
-                    <tr>
-                        <td>John Walker</td>
-                        <td>25</td>
-                        <td>25</td>
-                        <td><span class="badge badge-danger ftl clrl1">Envisioning</span></td>
-                    </tr>
-                    <tr>
-                        <td>John Walker</td>
-                        <td>25</td>
-                        <td>25</td>
-                        <td><span class="badge badge-success ftl clrl2">Envisioning</span></td>
-                    </tr>
-                  </div>
-                </div>
-              </div>
-        
-            </div>   
-        <div class="cont2">
-        <div class="cd1">
-        <div class="card custom">
-            <div class="card-body">
-                <h6 class="card-title mtit">Influence Ranking</h6>
-                <perfect-scrollbar style="height: 225px;">
 
-               
-            <ul class="custom">
-                <li class="li1"><div class="lst lst1"><p>Stablizing</p><span class="deta">Details</span></div></li>
-                <li class="li2"><div class="lst lst2"><p>Inclusive</p><span class="deta">Details</span></div></li>
-                <li class="li3"><div class="lst lst3"><p>Affilative</p><span class="deta">Details</span></div></li>
-                <li class="li4"><div class="lst lst4"><p>Authoritative</p><span class="deta">Details</span></div></li>
-                <li class="li5"><div class="lst lst1"><p>Stablizing</p><span class="deta">Details</span></div></li>
-                <li class="li6"><div class="lst lst2"><p>Inclusive</p><span class="deta">Details</span></div></li>
-                <li class="li7"><div class="lst lst3"><p>Affilative</p><span class="deta">Details</span></div></li>
-                <li class="li8"><div class="lst lst4"><p>Authoritative</p><span class="deta">Details</span></div></li>
-                <li class="li9"><div class="lst lst1"><p>Stablizing</p><span class="deta">Details</span></div></li>
-                <li class="li10"><div class="lst lst2"><p>Inclusive</p><span class="deta">Details</span></div></li>
-               
-            </ul>
-        </perfect-scrollbar>
-            </div>
-        </div>
-        </div>
-        <div class="cd2">
-            <div class="card custom">
-                <div class="card-body">
-                    <h6 class="card-title mtit">Most Important Bias</h6>
-             <span class="badge badge-info bd-gh">High Trust of self</span>
-             <h3 class="colli">25%</h3>
-             <p>More sales per user, in those with High Trust of Self</p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-Tab 2
-    </div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-Tab 3
-    </div>
-    
-  </div>
-</div>
-</perfect-scrollbar>
-</div>
 </div>
