@@ -1,0 +1,36 @@
+.rocket{
+    position: fixed;
+    bottom: 50px;
+    width: 150px;
+    right: 10px;
+    z-index: 1;
+    transition: all 2s ease-in-out;
+    float: right;
+    cursor: pointer;
+    animation:roc 3s ease-in-out 0s infinite;
+}
+#roc{
+    display: none;
+}
+.rocket img{
+    width: 100%;
+}
+@keyframes roc{
+    0%{
+        transform: translateY(-30px);
+    }
+    25%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media (max-width:575px){
+    .rocket{
+        width: 100px;
+    }
+}

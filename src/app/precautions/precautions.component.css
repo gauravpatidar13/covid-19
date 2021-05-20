@@ -1,0 +1,131 @@
+.precautions{
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.precautions h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color:var(--mc);
+    font-weight: 500;
+    padding:1rem 0;
+    text-align: center;
+}
+
+.pres-item{
+    margin:0 .5rem;
+}
+.pres-item .pres-head h1{
+    color:#fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 0;
+}
+.pres-content{
+    border-top-color: transparent;
+    border:2px solid gainsboro;
+}
+.pres-content .content{
+    margin:1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pres-head.do{
+    background:var(--mc);
+}
+.pres-head.dons{
+background:tomato;
+}
+.content-w{
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.content div.w-i{
+width: 70%;
+}
+.content div.w-i img{
+    width: 100%;
+}
+.content-w h1{
+    color:var(--mc);
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 700;
+    padding:.5rem 0;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.content-w p{
+    font-size: .7rem;
+    font-family: cursive;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+@media (min-width:992px) and (max-width:1199px){
+ .pres-item{
+     margin:0 0rem;
+ } 
+ .pres-item .pres-head h1{
+     font-size: 1rem;
+ }
+ .content-w h1{
+     font-size: .8rem;
+ }
+ .content-w p{
+     font: .5rem;
+ }
+}
+@media(min-width:768px) and (max-width:991px){
+    .pres-item{
+        margin:0 0rem;
+    } 
+    .pres-item .pres-head h1{
+        font-size: 1rem;
+    }
+    .content-w h1{
+        font-size: .7rem;
+    }
+    .content-w p{
+        font: .4rem;
+    }
+    .container{
+        margin:0 1rem;
+    }
+    .col-md-6{
+        padding:.5rem;
+    }
+    .content div.w-i{
+        width: 90%;
+        }
+        .row{
+            width: calc(100vw - 2.2rem);
+        }
+}
+@media (max-width:575px){
+    .precautions h1{
+        font-size: 1rem;
+    }
+    .pres-item .pres-head h1{
+        font-size: 1rem;
+    }
+    .content-w h1{
+        font-size: .8rem;
+    }
+    .content div.w-i{
+        width: 100%;
+    }
+}
+@media (max-width:350px){
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content div.w-i{
+        width: 40%;
+    }
+    .pres-item .pres-head h1{
+        font-size: .8rem;
+    }
+}

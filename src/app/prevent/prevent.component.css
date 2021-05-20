@@ -1,0 +1,44 @@
+.prevent{
+    padding:3rem 0;
+}
+.prevent h1{
+    color:var(--mc);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+.item h4{
+    text-align: center;
+    text-transform: capitalize;
+    color:var(--mc);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.item p{
+    color:gray;
+    font-size: .7rem;
+    font-weight: 500;
+    font-family: monospace;
+    text-align: center;
+}
+.item div{
+    width: 35%;
+    margin-bottom: 1rem;
+}
+.item div img{
+    width: 100%;
+}
+@media (max-width:575px){
+    .prevent h1{
+        font-size: 1rem;
+        color:var(--mc);
+        font-weight: 600;
+    }
+}

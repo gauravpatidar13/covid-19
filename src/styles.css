@@ -2,9 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+:root{
+    --mc:rgb(61,95,132)
+}
 *{
     margin:0;padding:0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html,body{
+    scroll-behavior: smooth;
 }
 body{
     background-color: rgb(247, 247, 251);
